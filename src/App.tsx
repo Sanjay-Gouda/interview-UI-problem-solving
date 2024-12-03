@@ -1,5 +1,6 @@
 import "./App.css";
-import Accordian from "./components/Accordian";
+import Accordian from "./components/Accordian/Accordian";
+import { ProductsPage } from "./components/Pagination/pagination";
 
 export interface AccordionItem {
   id: number;
@@ -38,7 +39,9 @@ function App() {
   return (
     <>
       <h1>UI Components</h1>
-      <Accordian accordianData={accordianData} />
+      {/* <Accordian accordianData={accordianData} /> */}
+      {/* <Pagination /> */}
+      <ProductsPage />
     </>
   );
 }

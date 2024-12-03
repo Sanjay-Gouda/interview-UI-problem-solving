@@ -1,5 +1,5 @@
 import { FC, useState } from "react";
-import { AccordionItem } from "../App";
+import { AccordionItem } from "../../App";
 import "./Accordian.style.css";
 
 interface IAccordianProps {
@@ -18,6 +18,7 @@ const Accordian = ({ accordianData }: IAccordianProps) => {
 
   return (
     <>
+      {/* <div className="wrapper"> */}
       {accordianData.map((item: AccordionItem) => (
         <div className="accordian" key={item.id}>
           <div className="accordian-header">
@@ -41,6 +42,7 @@ const Accordian = ({ accordianData }: IAccordianProps) => {
           </div>
         </div>
       ))}
+      {/* </div> */}
     </>
   );
 };

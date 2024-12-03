@@ -1,0 +1,32 @@
+span {
+  padding: 10px 20px;
+  font-size: 24px;
+  border: 1px solid;
+}
+
+.span-seleted {
+  background-color: rgb(214, 209, 209);
+}
+
+span:hover {
+  background-color: rgb(214, 209, 209);
+  cursor: pointer;
+}
+
+.productThumbnail {
+  border: 2px solid red;
+  background-color: aliceblue;
+}
+
+.productThumbnail > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.productWrapper {
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Creates 4 equal columns */
+  gap: 10px; /* Optional: Adds space between the boxes */
+}
